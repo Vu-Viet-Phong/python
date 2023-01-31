@@ -6,6 +6,6 @@ def binary_search(data, target, low, high):
 		if target == data[mid]:
 			return True
 		elif target < data[mid]:
-			retrun binary_search(data, target, low, mid - 1)
+			return binary_search(data, target, low, mid - 1)
 		else:
 			return binary_search(data, target, mid + 1, high)
