@@ -31,3 +31,15 @@ class Tree:
     def __len__(self):
         """Return the total number of elements in the tree."""
         raise NotImplementedError('must be implemented by subclass')
+    
+    def is_root(self, p):
+        """Return True if Position p represents the root of the tree."""
+        return self.root() == p
+    
+    def is_leaf(self, p):
+        """Return True if Position p does not have any children."""
+        return self.num_children(p) == 0
+    
+    def is_empty(self):
+        """Return True if the tree is empty."""
+        return len(self) == 0
