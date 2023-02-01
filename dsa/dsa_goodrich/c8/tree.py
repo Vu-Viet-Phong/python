@@ -70,3 +70,4 @@ class Tree:
         if p is None:
             p = self.root()
         return self._height2(p) # start height2 recursion
+    
