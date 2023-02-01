@@ -31,4 +31,4 @@ class BinaryTree(Tree):
         if self.left(p) is not None:
             yield self.left(p)
         if self.right(p) is not None:
-            yield self.right(p)
+            yield self.right(p) 
