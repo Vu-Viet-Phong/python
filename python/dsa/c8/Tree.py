@@ -63,8 +63,10 @@ class Tree:
             return 1 + max(self._height2(c) for c in self.childrent(p))
         
     def height(self, p=None):
-        """Return the height of the subtree rooted at Position p.
-        If p is None, return the height of the entire tree."""
+        """
+        Return the height of the subtree rooted at Position p.
+        If p is None, return the height of the entire tree.
+        """
         if p is None:
             p = self.root()
         return self._height2(p) # start height2 recursion
