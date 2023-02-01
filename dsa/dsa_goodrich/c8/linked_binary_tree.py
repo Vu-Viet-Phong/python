@@ -3,7 +3,7 @@ class LinkedBinaryTree(BinaryTree):
 
     class _Node:
         """Lightweight, nonpublic class for storing a node."""
-        __slots__ = '_element', '_parent', '_left', '_right' # streamline memory usage
+        __slots__ = '_element', '_parent', '_left', '_right'
 
         def __init__(self, element, parent=None, left=None, right=None):
             self._element = element
